@@ -193,15 +193,20 @@ h4 {
   	border-radius: 10px;
 }
 
-#tech {
-	margin-bottom: 50px;
-	padding: 0 30px;
-}
-
 #techHead {
 	font-size: 28px;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 	color: #383a4f;
+}
+
+#tech {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 
 #logo {
@@ -209,7 +214,7 @@ h4 {
 	margin: 15px;
 }
 
-#cssLogo {
+#cssLogo, #wplogo{
 	width: 145px;
 }
 
