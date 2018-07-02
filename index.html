@@ -6,11 +6,13 @@
 		<link href="https://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<script
 		src="https://code.jquery.com/jquery-3.3.1.min.js"
 		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 		crossorigin="anonymous">
 		</script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	</head>
 	<body>
 		<div>
@@ -37,7 +39,7 @@
 				<p id="projHead">My Work</p>
 
 				<div class="container">
-					<div class="thumb">
+					<div data-aos="fade-right" class="thumb">
 						<a href="https://github.com/alyoung1991/ThreejsSolarSystem" target="_blank">
 							<img class="projectPic" src="https://i.imgur.com/EI3GK8I.png">
 				            <div class="middle">
@@ -45,7 +47,7 @@
 				            </div>
 						</a>
 			        </div>
-					<div class="thumb">
+					<div data-aos="fade-right" class="thumb">
 						<a href="https://github.com/ZMu113r/busTracker" target="_blank">
 							<img class="projectPic" src="https://i.imgur.com/zbfNC7E.jpg">
 							<div class="middle">
@@ -53,7 +55,7 @@
 			                </div>
 						</a>
 					</div>
-					<div class="thumb">
+					<div data-aos="fade-right" class="thumb">
 						<a href="https://github.com/alyoung1991/ToDoList" target="_blank">
 							<img class="projectPic" src="https://i.imgur.com/fUyDfNP.png">
 			                <div class="middle">
@@ -61,7 +63,7 @@
 			                </div>
 						</a>
 	            	</div>
-					<div class="thumb">
+					<div data-aos="fade-left" class="thumb">
 						<a href="https://github.com/alyoung1991/rgbColorGame" target="_blank">
 							<img class="projectPic" src="https://i.imgur.com/MO2jYGH.png">
 							<div class="middle">
@@ -69,7 +71,7 @@
 			                </div>
 						</a>
 					</div>
-					<div class="thumb">
+					<div data-aos="fade-left" class="thumb">
 						<a href="https://github.com/alyoung1991/alyoung1991.github.io" target="_blank">
 							<img class="projectPic" src="https://i.imgur.com/rH1LkyD.png">
 							<div class="middle">
@@ -77,7 +79,7 @@
 			                </div>
 						</a>
 					</div>
-					<div class="thumb">
+					<div data-aos="fade-left" class="thumb">
 						<a href="" target="_blank">
 							<img class="projectPic" src="https://i.imgur.com/zcN13Lr.jpg">
 							<div class="middle">
@@ -123,5 +125,10 @@
 		</div>
 
 		<script type="text/javascript" src="script.js"></script>
+		<script>
+		    AOS.init({
+		    	duration: 1500,
+		    });
+		</script>
 	</body>
 </html>
