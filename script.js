@@ -1,6 +1,6 @@
 var i = 0;
 var speed = 140;
-var titleText = "Developer";
+var titleText = "Software Developer";
 
 // Cursor Blinking Animation
 setInterval(function(){
