@@ -118,27 +118,34 @@ h4 {
 }
 
 .container {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.project{
+ 	margin: 30px;
+ 	width: 70%;
+	display: flex;
+	align-items: center;
 }
 
 .thumb {
-	margin: 25px;
 	position: relative;
 	float: left;
+	margin-right: 30px;
 }
 
-.thumb:hover .projectPic {
+.projectInfo{
+	text-align: left;
+	padding-bottom: 30px;
+}
+
+.projectInfo h4{
+	text-align: center;
+}
+
+.thumb:hover .project {
   	opacity: 0.3;
   	-webkit-transform: scale(1.1);
   	    -ms-transform: scale(1.1);
@@ -156,8 +163,8 @@ h4 {
 	margin: 0px auto;
 	border-radius: 5%;
 	position: relative;
-    width:  280px;
-	height: 225px;
+    width:  220px;
+	height: 175px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -188,7 +195,7 @@ h4 {
 .text {
   	background-color: white;
   	color: #383a4f;
-  	font-size: 16px;
+  	font-size: 12px;
   	padding: 16px 32px;
   	border-radius: 10px;
 }
