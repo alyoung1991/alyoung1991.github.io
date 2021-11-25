@@ -5,136 +5,158 @@
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<link href="https://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<script
 		src="https://code.jquery.com/jquery-3.3.1.min.js"
 		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 		crossorigin="anonymous">
 		</script>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	</head>
 	<body>
-		<div>
-			<div id="heading">
+		<div class="main">
+			<div class="nav">
+				<div class="hamburger"><i class="fas fa-bars"></i></div>
+				<div class="nav-menu">
+					<div class="nav-hide-button"><i class="fas fa-times"></i></div>
+					<div class="nav-link about-link">About</div>
+					<div class="nav-link projects-link">Projects</div>
+					<div class="nav-link skills-link">Skills</div>
+					<div class="nav-link contact-link">Contact</div>
+					<div class="">Resume, LinkedIn, AngelList, Github</div>
+				</div>
+			</div>
+			<div class="heading">
 				<!-- Title -->
-				<h1><span id="title"></span><span class="cursor">|</span></h1>
+				<h1><span class="title"></span><span class="cursor">|</span></h1>
 
 				<!-- Self Photo -->
-				<img id="myPhoto" src="https://i.imgur.com/c8PQtk5.jpg">
+				<img class="myPhoto" src="https://i.imgur.com/c8PQtk5.jpg">
 
 				<!-- About -->
-				<div id="about">
-					<p id="bio">
-						<div id="intro">Hi, I'm Alberto Young!</div>
-						<div id="description">I am a Software Engineer, with a strong background in design and composition. I have professional experience planning, developing, and deploying full stack web applications on an international scale. I am actively searching for full time employment as a Software Engineer.</div>
+				<div class="about">
+					<p class="bio">
+						<div class="intro">Hi, I'm Alberto Young!</div>
+						<div class="description">I'm a Software Engineer with a Bachelor's in Computer Science, as well as a recent graduate of
+						the App Academy software engineering bootcamp. I have professional experience working as a developer for companies ranging from start ups to fortune 500 companies, developing full stack web
+						applications utilizing modern technologies such as React, Redux, Node, and Ruby on Rails.</div>
 					</p>
 				</div>
 			</div>
 
 			<!-- Projects -->
-			<div id="projects">
-				<img id="banner" src="https://i.imgur.com/wPRf8XS.jpg">
+			<div class="projects">
+				<img class="banner" src="./assets/images/cityBanner.png">
 
-				<p id="projHead">Projects</p>
+				<div class="projHead">Projects</div>
 
 				<div class="container">
-					<!-- <div class="project" data-aos="fade-right">
+					<div class="project">
 						<div class="thumb">
-							<a href="https://alyoung1991.github.io/ThreejsSolarSystem/threejsSolarSystem/index.html" target="_blank">
-								<img class="projectPic" src="https://i.imgur.com/EI3GK8I.png">
+							<a href="https://nozama-fsp.herokuapp.com/" target="_blank">
+								<img class="projectPic" src="./assets/images/nozamaThumb.jpg">
 								<div class="middle">
-				                	<div class="text">HTML CSS JavaScript</div>
+				                	<div class="text">React/Redux Ruby on Rails</div>
 				                </div>
 							</a>
 				        </div>
-				        <div class="projectInfo">
-				        	<h4>Solar System Model</h4>							
-				        	<p>A web based 3D Solar System simulation designed with Three.js, a JavaScript graphics library</p>
-				        </div>
-					</div> -->
-
-					<div class="project" data-aos="fade-right">
-						<div class="thumb">
-							<a href="https://alyoung1991.github.io/rgbColorGame/Color%20Game/colorGame.html" target="_blank">
-								<img class="projectPic" src="https://i.imgur.com/MO2jYGH.png">
-								<div class="middle">
-				                	<div class="text">HTML CSS JavaScript</div>
-				                </div>
-							</a>
-				        </div>
-				        <div class="projectInfo">
-				        	<h4>RGB Color Picker Game</h4>							
-				        	<p>A color guessing game built to demonstrate DOM manipulation and basic web layout</p>
+				        <div class="project-info">
+				        	<h4>Nozama</h4>							
+				        	<p>A full stack Clone of Amazon.com with full CRUD functionality</p>
+							<div class="project-links">
+								<a class="project-link" href="https://nozama-fsp.herokuapp.com/" target="_blank">Live</a>
+								<a class="project-link" href="https://github.com/alyoung1991/nozama" target="_blank">Github</a>
+							</div>
 				        </div>
 					</div>
-
-					<div class="project" data-aos="fade-right">
+					
+					<div class="project">
 						<div class="thumb">
-							<a href="https://alyoung1991.github.io/btcPriceChecker/index.html" target="_blank">
-								<img class="projectPic" src="https://en.bitcoin.it/w/images/en/2/29/BC_Logo_.png">
+							<a href="https://www.youngalberto.com/keyboard_hero/" target="_blank">
+								<img class="projectPic" src="./assets/images/KeyboardHeroThumb.jpg">
 								<div class="middle">
-				                	<div class="text">HTML CSS JavaScript</div>
+									<div class="text">HTML CSS JavaScript</div>
 				                </div>
 							</a>
 				        </div>
-				        <div class="projectInfo">
-				        	<h4>Bitcoin Price Tracker</h4>							
-				        	<p>A web application which retrieves the current price of bitcoin from a web API and displays it in various currencies</p>
+				        <div class="project-info">
+							<h4>Keyboard Hero</h4>							
+				        	<p>A web application built with vanilla JavaScript and beautiful CSS animations</p>
+							<div class="project-links">
+								<a class="project-link" href="https://www.youngalberto.com/keyboard_hero/" target="_blank">Live</a>
+								<a class="project-link" href="https://github.com/alyoung1991/keyboard_hero" target="_blank">Github</a>
+							</div>
 				        </div>
 					</div>
-
-					<div class="project" data-aos="fade-right">
+					
+					<div class="project">
 						<div class="thumb">
-							<a href="https://github.com/alyoung1991/todoList" target="_blank">
-								<img class="projectPic" src="https://i.imgur.com/RVRXHKU.png">
+							<a href="https://beat-match-mern.herokuapp.com/" target="_blank">
+								<img class="projectPic" src="./assets/images/beatMatchThumb.jpg">
 								<div class="middle">
-				                	<div class="text">HTML CSS JavaScript</div>
-				                </div>
+									<div class="text">MongoDB Express React/Redux Node</div>
+								</div>
 							</a>
-				        </div>
-				        <div class="projectInfo">
-				        	<h4>To Do List App</h4>							
-				        	<p>A full stack to-do list website supported by a custom built API, and tools such as jQuery and Node.js</p>
-				        </div>
-					</div>
-
-					<div class="project" data-aos="fade-right">
-						<div class="thumb">
-							<a href="" target="_blank">
-								<img class="projectPic" src="https://i.imgur.com/zcN13Lr.jpg">
-								<div class="middle">
-				                	<div class="text">HTML CSS JavaScript</div>
-				                </div>
-							</a>
-				        </div>
-				        <div class="projectInfo">
-				        	<h4>mARket</h4>							
-				        	<p>An iOS Mobile application that allows users to view retail products in augmented reality, using Apple’s ARKit</p>
-				        </div>
+						</div>
+						<div class="project-info">
+							<h4>Beat Match</h4>							
+							<p>A full stack web application built using the MERN stack and the Spotify API</p>
+							<div class="project-links">
+								<a class="project-link" href="https://beat-match-mern.herokuapp.com/" target="_blank">Live</a>
+								<a class="project-link" href="https://github.com/FarzamA/BeatMatch" target="_blank">Github</a>
+							</div>
+						</div>
 					</div>
 				</div>
 
-				<img id="banner" src="https://i.imgur.com/OJqYjk8.jpg">
+				<img class="banner" src="./assets/images/forrestBanner.png">
+			</div>
+
+			<!-- Skills -->
+			<div class="skills">
+				<p class="skillsHead">Skills</p>
+				<div class="skills-container">
+					<i class="devicon-react-original-wordmark"></i>
+					<i class="devicon-redux-original"></i>
+					<i class="devicon-javascript-plain"></i>
+					<i class="devicon-css3-plain-wordmark"></i>
+					<i class="devicon-html5-plain-wordmark"></i>
+					<i class="devicon-java-plain-wordmark"></i>
+					<i class="devicon-ruby-plain-wordmark"></i>
+					<i class="devicon-rails-plain"></i>
+					<i class="devicon-grails-plain"></i>
+					<i class="devicon-groovy-plain"></i>
+					<i class="devicon-amazonwebservices-plain-wordmark"></i>
+					<i class="devicon-nodejs-plain-wordmark"></i>
+					<i class="devicon-npm-original-wordmark"></i>
+					<i class="devicon-git-plain-wordmark"></i>
+					<i class="devicon-jasmine-plain"></i>
+					<i class="devicon-mongodb-plain-wordmark"></i>
+					<i class="devicon-express-original-wordmark"></i>
+					<i class="devicon-webpack-plain-wordmark"></i>
+					<i class="devicon-babel-plain"></i>
+					<i class="devicon-sass-original"></i>
+					<i class="devicon-jquery-plain-wordmark"></i>
+					<i class="devicon-mysql-plain-wordmark"></i>
+					<i class="devicon-postgresql-plain-wordmark"></i>
+					<i class="devicon-bootstrap-plain"></i>
+					<i class="devicon-heroku-original-wordmark"></i>
+					<i class="devicon-threejs-original-wordmark"></i>
+				</div>
 			</div>
 
 			
 			<!-- Contact -->
-			<div id="contact">
-				<p id="contactHead">Contact</p>
+			<div class="contact">
+				<p class="contactHead">Contact</p>
 				<a href="https://www.linkedin.com/in/albertoyoung/" target="_blank"><i class="fab fa-linkedin zoom"></i></a>
 				<a href="https://www.github.com/alyoung1991" target="_blank"><i class="fab fa-github zoom"></i></a>
 				<a href="mailto:albertoyoungdev@gmail.com" target="_blank"><i class="fas fa-envelope zoom"></i></a>
 			</div>
-			<p id="credits">Created by: <strong>Me</strong></p>
-			<p id="credits">Using: <strong>HTML, CSS, and Javascript</strong></p>
+			<p class="credits">Created by: <strong>Me</strong></p>
+			<p class="credits">Using: <strong>HTML, CSS, and Javascript</strong></p>
 		</div>
 
 		<script type="text/javascript" src="script.js"></script>
-		<script>
-		    AOS.init({
-		    	duration: 1000,
-		    });
-		</script>
 	</body>
 </html>

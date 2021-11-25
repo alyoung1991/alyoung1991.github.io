@@ -5,6 +5,84 @@ body {
 	text-align: center;
 }
 
+.main {
+	min-width: 1175px;
+}
+
+.nav {
+	height: 100%;
+	background-color: #ffffff4d;
+	display: flex;
+	justify-content: flex-end;
+	position: sticky;
+	top: 0px;
+	z-index: 1;
+}
+
+.hamburger {
+	padding: 20px;
+}
+
+.fa-bars { 
+	font-size: 28px;
+}
+
+.fa-bars:hover {
+	cursor: pointer;
+}
+
+.nav-menu {
+	width: 20vw;
+	height: 100vh;
+	color: white;
+	background-color: #53566e;
+	position: absolute;
+	transform: translateX(40vw);
+	display: none;
+	z-index: 2;
+}
+
+.nav-link {
+	font-size: 20px;
+	text-transform: uppercase;
+	margin: 8px 0;
+}
+
+.nav-link:hover {
+	cursor: pointer;
+}
+
+.nav-hide-button {
+	align-self: flex-end;
+	padding: 20px;
+}
+
+.nav-hide-button:hover {
+	cursor: pointer;
+}
+
+.fa-times {
+	font-size: 28px;
+}
+
+.display-nav {
+	transform: translateX(0px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	animation: shownav 0.4s;
+}
+
+@keyframes shownav {
+	0% {
+		transform: translateX(40vw);
+	}
+
+	100% {
+		transform: translateX(0px);
+	}
+}
+
 h1 {
 	letter-spacing: 6px;
 	text-transform: uppercase;
@@ -15,8 +93,8 @@ h4 {
 	padding: 0 0 20px 0;
 }
 
-#heading {
-	padding: 50px 0 0 0;
+.heading {
+	padding: 0 0 50px 0;
 }
 
 .blink {
@@ -59,7 +137,7 @@ h4 {
 	}
 }
 
-#myPhoto {
+.myPhoto {
 	margin: 20px auto;
   	margin-top: 100px;
 	height: 275px;
@@ -71,46 +149,46 @@ h4 {
 	        animation: 2.4s ease 1 forwards slide;
 }
 
-#about {
+.about {
 	padding: 10px 150px;
 	-webkit-animation: 2.7s ease 1 forwards slide;
 	        animation: 2.7s ease 1 forwards slide;
 }
 
-#bio {
+.bio {
 	text-align: justify-all;
 	font-size: 20px;
 }
 
-#intro {
+.intro {
 	padding-bottom: 25px;
 	font-size: 20px;
 	color: #383a4f;
 }
 
-#description {
+.description {
 	font-size: 15px;
 	color: #6b728c;
 	width: 75%;
 	margin: 0 auto;
 }
 
-#banner {
+.banner {
 	width: 100%;
 	margin-bottom: 0;
 }
 
-#projects {
+.projects {
 	background-color: #3f4159;
 	color: white;
 	padding: 40px auto;
 }
 
-#projHead {
-	padding-top: 40px;
+.projHead {
+	padding-top: 80px;
 }
 
-#projHead, #techHead {
+.projHead, .skillsHead {
 	text-transform: uppercase;
 	letter-spacing: 6px;
 	font-size: 26px;
@@ -136,13 +214,18 @@ h4 {
 	margin-right: 30px;
 }
 
-.projectInfo{
-	text-align: left;
+.project-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	padding-bottom: 30px;
 }
 
-.projectInfo h4{
-	text-align: center;
+.project-link{
+	text-decoration: underline;
+	color: white;
+	margin: 5px;
 }
 
 .thumb:hover .project {
@@ -161,10 +244,10 @@ h4 {
 
 .projectPic {
 	margin: 0px auto;
-	border-radius: 5%;
+	border-radius: 5px;
 	position: relative;
-    width:  220px;
-	height: 175px;
+    width:  375px;
+	height: 200px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -200,18 +283,39 @@ h4 {
   	border-radius: 10px;
 }
 
-#contactHead {
-	text-transform: uppercase;
-	letter-spacing: 6px;
-	font-size: 20px;
-	padding-bottom: 10px
+.skills {
+	color: #383a4f;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0 50px 0;
 }
 
-#contact {
+.skills-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 60%;
+	font-size: 72px;
+}
+
+.skills-container i {
+	margin: 10px;
+}
+
+.contact {
 	color: #383a4f;
 	font-size: 28px;
 	letter-spacing: 5px;
 	margin: 0 auto 30px auto;
+}
+
+.contactHead {
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	font-size: 20px;
+	padding-bottom: 10px
 }
 
 .zoom {
@@ -235,7 +339,7 @@ h4 {
 	color: #3f4159;
 }
 
-#credits {
+.credits {
 	font-size: 10px;
 	color: #919191;
 	margin: 0;
