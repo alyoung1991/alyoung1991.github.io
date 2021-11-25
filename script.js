@@ -35,6 +35,7 @@ let aboutLink = document.querySelector(".about-link");
 let projectsLink = document.querySelector(".projects-link");
 let skillsLink = document.querySelector(".skills-link");
 let contactLink = document.querySelector(".contact-link");
+let resumeLink = document.querySelector(".resume-link");
 
 let projects = document.querySelector(".projHead");
 let skills = document.querySelector(".skillsHead");
@@ -54,4 +55,8 @@ skillsLink.addEventListener("click", () => {
 
 contactLink.addEventListener("click", () => {
 	contact.scrollIntoView();
+});
+
+resumeLink.addEventListener("click", () => {
+	
 });
