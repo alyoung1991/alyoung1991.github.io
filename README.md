@@ -1,5 +1,5 @@
 # Personal Website
-[Link](www.youngalberto.com)
+[Link](https://www.youngalberto.com/)
 
 Built Using HTML, CSS, and JS
 
