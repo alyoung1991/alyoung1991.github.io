@@ -1,4 +1,4 @@
-# [Link]{youngalberto.com}
+# youngalberto.com
 Personal Website
 
 Built Using HTML, CSS, and JS
